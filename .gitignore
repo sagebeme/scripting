@@ -1,0 +1,43 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.backup
+
+# Test files created by exercises
+test*.txt
+test*.sh
+*_test/
+test_*/
+
+# Backup directories
+backup_*/
+backups/
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Personal notes
+notes.txt
+TODO.txt
