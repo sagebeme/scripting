@@ -104,41 +104,43 @@ By the end of this module, you will be able to:
 
 ## 🎯 Exercises
 
-### Exercise 1: Variables and Types
-1. Create variables of different types
-2. Print their types using `type()`
-3. Convert between types
-4. Perform operations between different types
+**Location**: See the [`exercises/`](./exercises/) directory for hands-on practice files.
 
-### Exercise 2: String Operations
-1. Create a string with your name
-2. Convert it to uppercase
-3. Count the number of characters
-4. Replace spaces with hyphens
-5. Split into words and join with commas
+### Exercise 1: Variables and Types (`exercises/exercise-1-variables.py`)
+- Create variables of different types
+- Print their types using `type()`
+- Convert between types
+- Perform operations between different types
 
-### Exercise 3: Lists and Dictionaries
-1. Create a list of numbers
-2. Add, remove, and modify elements
-3. Create a dictionary with personal info
-4. Access and modify dictionary values
-5. Iterate through both structures
+### Exercise 2: String Operations (`exercises/exercise-2-strings.py`)
+- Create and manipulate strings
+- Use string methods
+- Format strings
+- Slice strings
 
-### Exercise 4: Control Flow
-1. Write a program that checks if a number is positive, negative, or zero
-2. Create a loop that prints numbers 1-10
-3. Use a loop to find the sum of numbers 1-100
-4. Create nested loops to print a pattern
+### Exercise 3: Lists and Dictionaries (`exercises/exercise-3-data-structures.py`)
+- Create lists and dictionaries
+- Add, remove, and modify elements
+- Iterate through structures
+- Use list and dict methods
 
-### Exercise 5: Functions
-1. Write a function that calculates the area of a circle
-2. Create a function that takes a name and returns a greeting
-3. Write a function with default parameters
-4. Create a function that returns multiple values
+### Exercise 4: Control Flow (`exercises/exercise-4-control-flow.py`)
+- Write if/else statements
+- Create loops
+- Use break and continue
+- Practice nested structures
+
+### Exercise 5: Functions (`exercises/exercise-5-functions.py`)
+- Define functions
+- Pass parameters
+- Return values
+- Use default parameters
 
 ## 🚀 Projects
 
-### Project 1: Calculator Script
+**Location**: See the [`projects/`](./projects/) directory for project templates.
+
+### Project 1: Calculator Script (`projects/project-1-calculator.py`)
 Create a calculator that:
 - Takes two numbers as input
 - Performs basic operations (add, subtract, multiply, divide)
@@ -146,13 +148,7 @@ Create a calculator that:
 - Displays results in a formatted way
 - Allows multiple calculations
 
-**Requirements:**
-- Use functions for each operation
-- Add error handling
-- Format output nicely
-- Add comments
-
-### Project 2: Text Analyzer
+### Project 2: Text Analyzer (`projects/project-2-text-analyzer.py`)
 Create a script that:
 - Takes a text string as input
 - Counts characters, words, and sentences
@@ -160,7 +156,7 @@ Create a script that:
 - Calculates average word length
 - Displays statistics in a readable format
 
-### Project 3: Rock, Paper, Scissors Game
+### Project 3: Rock, Paper, Scissors Game (`projects/project-3-game.py`)
 Create a game that:
 - Takes user input (rock, paper, or scissors)
 - Generates computer choice randomly
@@ -171,60 +167,19 @@ Create a game that:
 
 ## 📝 Example Scripts
 
-### Example 1: Hello World with Input
-```python
-#!/usr/bin/env python3
-"""
-Simple greeting script
-Author: Your Name
-Date: 2024-01-01
-"""
+**Location**: See the [`examples/`](./examples/) directory for working examples.
 
-name = input("What's your name? ")
-age = input("How old are you? ")
+### Example 1: Hello World with Input (`examples/hello-world.py`)
+Simple greeting script with user input.
 
-print(f"Hello, {name}! You are {age} years old.")
-print("Welcome to Python programming!")
-```
+### Example 2: Number Operations (`examples/number-operations.py`)
+Demonstrate arithmetic operations and formatting.
 
-### Example 2: Number Operations
-```python
-#!/usr/bin/env python3
-"""Number operations example"""
+### Example 3: List Operations (`examples/list-operations.py`)
+Show list manipulation and methods.
 
-# Get numbers from user
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-
-# Perform operations
-print(f"\nResults:")
-print(f"Sum: {num1 + num2}")
-print(f"Difference: {num1 - num2}")
-print(f"Product: {num1 * num2}")
-print(f"Quotient: {num1 / num2 if num2 != 0 else 'Cannot divide by zero'}")
-```
-
-### Example 3: List Operations
-```python
-#!/usr/bin/env python3
-"""List manipulation example"""
-
-# Create a list
-numbers = [1, 2, 3, 4, 5]
-
-# Add elements
-numbers.append(6)
-numbers.insert(0, 0)
-
-# Remove elements
-numbers.remove(3)
-
-# List comprehension
-squared = [x**2 for x in numbers]
-
-print(f"Original: {numbers}")
-print(f"Squared: {squared}")
-```
+### Example 4: Function Examples (`examples/function-examples.py`)
+Demonstrate function definition and usage.
 
 ## 🔍 Key Concepts
 
@@ -283,10 +238,29 @@ Before moving to the next module, ensure you can:
 
 ## 📚 Additional Resources
 
+### Documentation
 - [Python Official Tutorial](https://docs.python.org/3/tutorial/)
-- [Real Python](https://realpython.com/)
-- [Python.org Documentation](https://docs.python.org/3/)
-- [PEP 8 Style Guide](https://pep8.org/)
+- [Python Documentation](https://docs.python.org/3/)
+- `help()` function in Python REPL
+
+### Learning
+- [Real Python](https://realpython.com/) - Comprehensive Python tutorials
+- [Python.org Tutorial](https://docs.python.org/3/tutorial/)
+- [Learn Python](https://www.learnpython.org/) - Interactive tutorial
+
+### Tools
+- [Python Tutor](https://pythontutor.com/) - Visualize code execution
+- [Repl.it](https://repl.it/) - Online Python environment
+- [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/) - Educational IDE
+
+### Practice
+- [Python Exercises](https://www.practicepython.org/) - Practice problems
+- [HackerRank Python](https://www.hackerrank.com/domains/python) - Coding challenges
+- [Codewars Python](https://www.codewars.com/?language=python) - Kata challenges
+
+### Style Guide
+- [PEP 8 Style Guide](https://pep8.org/) - Python coding standards
+- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 
 ## 🛠️ Setup Instructions
 

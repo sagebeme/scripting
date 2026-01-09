@@ -40,3 +40,11 @@ The capstone projects in this module are meant to be comprehensive. Use all skil
 - And more!
 
 Good luck with your projects!
+
+## How to approach solutions
+- Read the exercise/project objectives and constraints before coding
+- Sketch a short plan: inputs, outputs, edge cases, success criteria
+- Implement in small steps; run the script often and handle errors early
+- Add brief comments only where logic might be unclear
+- Test with representative and edge-case data; verify against the checklist
+- Compare your attempt with the provided solution to learn alternate patterns

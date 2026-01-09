@@ -27,3 +27,11 @@ Solutions will be added here as you progress. Focus on understanding the concept
 - Your solution might be different but still correct
 - Focus on understanding why solutions work
 - Practice explaining solutions to others
+
+## How to approach solutions
+- Read the exercise/project objectives and constraints before coding
+- Sketch a short plan: inputs, outputs, edge cases, success criteria
+- Implement in small steps; run the script often and handle errors early
+- Add brief comments only where logic might be unclear
+- Test with representative and edge-case data; verify against the checklist
+- Compare your attempt with the provided solution to learn alternate patterns
