@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-Solution: Exercise 5 - Packages
-Complete solution for the exercise
+Solution: Exercise 5 - CLI Packages
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 5 - Packages")
+print("Solution: Exercise 5 - CLI Packages")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+# Example package structure
+print("1. Package structure:")
+print("   mycli/")
+print("     __init__.py")
+print("     main.py")
+print("     commands.py")
+print("   setup.py")
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+print("\n2. Install package:")
+print("   pip install -e .")
 
 print("\n✅ Solution completed!")

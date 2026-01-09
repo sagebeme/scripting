@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 3 - Logging
-Complete solution for the exercise
 """
+import logging
 
 print("=" * 60)
-print(f"Solution: Exercise 3 - Logging")
+print("Solution: Exercise 3 - Logging")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+logger.debug("1. Debug message")
+logger.info("2. Info message")
+logger.warning("3. Warning message")
+logger.error("4. Error message")
+logger.critical("5. Critical message")
 
 print("\n✅ Solution completed!")

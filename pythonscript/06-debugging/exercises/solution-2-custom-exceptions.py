@@ -1,28 +1,31 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 2 - Custom Exceptions
-Complete solution for the exercise
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 2 - Custom Exceptions")
+print("Solution: Exercise 2 - Custom Exceptions")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+class CustomError(Exception):
+    pass
 
+class ValidationError(Exception):
+    def __init__(self, message, field):
+        self.message = message
+        self.field = field
+        super().__init__(f"{field}: {message}")
+
+class InsufficientFundsError(Exception):
+    pass
 
 try:
-    result = 10 / 2
-    print(f"1. Result: {result}")
-except ZeroDivisionError:
-    print("1. Division by zero")
-except Exception as e:
-    print(f"1. Error: {e}")
-else:
-    print("1. No errors occurred")
-finally:
-    print("1. Finally block executed")
+    raise CustomError("This is a custom error")
+except CustomError as e:
+    print(f"1. Caught custom error: {e}")
+
+try:
+    raise ValidationError("Invalid value", "email")
+except ValidationError as e:
+    print(f"2. Validation error: {e}")
 
 print("\n✅ Solution completed!")

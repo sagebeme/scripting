@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 """
-Solution: Exercise 5 - Dates
-Complete solution for the exercise
+Solution: Exercise 5 - Date Operations
 """
+from datetime import datetime, timedelta
 
 print("=" * 60)
-print(f"Solution: Exercise 5 - Dates")
+print("Solution: Exercise 5 - Date Operations")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+now = datetime.now()
+print(f"1. Current date/time: {now}")
 
+date_str = "2023-01-15"
+date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+print(f"2. Parsed date: {date_obj}")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+future = now + timedelta(days=7)
+print(f"3. Date in 7 days: {future}")
+
+diff = future - now
+print(f"4. Difference: {diff.days} days")
 
 print("\n✅ Solution completed!")

@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 3 - Subprocess
-Complete solution for the exercise
 """
+import subprocess
 
 print("=" * 60)
-print(f"Solution: Exercise 3 - Subprocess")
+print("Solution: Exercise 3 - Subprocess")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+result = subprocess.run(['echo', 'Hello'], capture_output=True, text=True)
+print(f"1. Output: {result.stdout.strip()}")
 
+result = subprocess.run(['python3', '--version'], capture_output=True, text=True)
+print(f"2. Python version: {result.stdout.strip()}")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+result = subprocess.run(['ls', '-l'], capture_output=True, text=True, cwd='.')
+print(f"3. Files: {len(result.stdout.splitlines())} lines")
 
 print("\n✅ Solution completed!")

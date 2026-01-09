@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 """
-Solution: Exercise 5 - Async
-Complete solution for the exercise
+Solution: Exercise 5 - Async Programming
 """
+import asyncio
 
 print("=" * 60)
-print(f"Solution: Exercise 5 - Async")
+print("Solution: Exercise 5 - Async Programming")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+async def greet(name):
+    await asyncio.sleep(0.1)
+    return f"Hello, {name}!"
 
+async def main():
+    result = await greet("Python")
+    print(f"1. {result}")
+    
+    tasks = [greet("Alice"), greet("Bob"), greet("Charlie")]
+    results = await asyncio.gather(*tasks)
+    print(f"2. Results: {results}")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+asyncio.run(main())
 
 print("\n✅ Solution completed!")

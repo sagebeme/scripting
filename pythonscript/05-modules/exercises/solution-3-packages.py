@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 3 - Packages
-Complete solution for the exercise
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 3 - Packages")
+print("Solution: Exercise 3 - Packages")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+# Package structure example
+print("1. Package structure:")
+print("   mypackage/")
+print("     __init__.py")
+print("     module1.py")
+print("     module2.py")
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+print("\n2. Import from package:")
+print("   from mypackage import module1")
+print("   from mypackage.module2 import function")
 
 print("\n✅ Solution completed!")

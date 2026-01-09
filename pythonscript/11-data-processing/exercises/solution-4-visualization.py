@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """
-Solution: Exercise 4 - Visualization
-Complete solution for the exercise
+Solution: Exercise 4 - Data Visualization
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 4 - Visualization")
+print("Solution: Exercise 4 - Data Visualization")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+# Example using matplotlib (requires: pip install matplotlib)
+# import matplotlib.pyplot as plt
+# 
+# data = [1, 2, 3, 4, 5]
+# plt.plot(data)
+# plt.title("Example Plot")
+# plt.show()
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+print("1. Visualization example")
+print("   Note: Install matplotlib: pip install matplotlib")
+print("   Example: import matplotlib.pyplot as plt")
 
 print("\n✅ Solution completed!")

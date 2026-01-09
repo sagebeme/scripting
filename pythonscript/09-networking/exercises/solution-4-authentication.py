@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 4 - Authentication
-Complete solution for the exercise
 """
+import base64
 
 print("=" * 60)
-print(f"Solution: Exercise 4 - Authentication")
+print("Solution: Exercise 4 - Authentication")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+# Basic authentication example
+username = "user"
+password = "pass"
+credentials = f"{username}:{password}"
+encoded = base64.b64encode(credentials.encode()).decode()
+print(f"1. Encoded credentials: {encoded}")
 
+decoded = base64.b64decode(encoded).decode()
+print(f"2. Decoded: {decoded}")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+# Note: For actual HTTP auth, use requests library:
+# import requests
+# response = requests.get(url, auth=('user', 'pass'))
 
 print("\n✅ Solution completed!")

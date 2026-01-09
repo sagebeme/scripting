@@ -1,19 +1,40 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 1 - Decorators
-Complete solution for the exercise
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 1 - Decorators")
+print("Solution: Exercise 1 - Decorators")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+def my_decorator(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
 
+@my_decorator
+def say_hello():
+    print("Hello!")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+say_hello()
+
+def timer(func):
+    import time
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"Function took {end - start:.4f} seconds")
+        return result
+    return wrapper
+
+@timer
+def slow_function():
+    import time
+    time.sleep(0.1)
+    return "Done"
+
+slow_function()
 
 print("\n✅ Solution completed!")

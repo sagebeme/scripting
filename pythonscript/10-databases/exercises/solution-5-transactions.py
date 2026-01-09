@@ -1,19 +1,28 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 5 - Transactions
-Complete solution for the exercise
 """
+import sqlite3
 
 print("=" * 60)
-print(f"Solution: Exercise 5 - Transactions")
+print("Solution: Exercise 5 - Transactions")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+conn = sqlite3.connect(':memory:')
+cursor = conn.cursor()
+cursor.execute("CREATE TABLE accounts (id INTEGER, balance REAL)")
+cursor.execute("INSERT INTO accounts VALUES (1, 100.0)")
+cursor.execute("INSERT INTO accounts VALUES (2, 50.0)")
 
+try:
+    # Transfer money
+    cursor.execute("UPDATE accounts SET balance = balance - 20 WHERE id = 1")
+    cursor.execute("UPDATE accounts SET balance = balance + 20 WHERE id = 2")
+    conn.commit()
+    print("1. Transaction committed")
+except:
+    conn.rollback()
+    print("1. Transaction rolled back")
 
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
-
+conn.close()
 print("\n✅ Solution completed!")

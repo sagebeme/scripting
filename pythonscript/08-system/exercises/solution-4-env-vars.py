@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 """
-Solution: Exercise 4 - Env Vars
-Complete solution for the exercise
+Solution: Exercise 4 - Environment Variables
 """
+import os
 
 print("=" * 60)
-print(f"Solution: Exercise 4 - Env Vars")
+print("Solution: Exercise 4 - Environment Variables")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+print(f"1. HOME: {os.environ.get('HOME', 'N/A')}")
+print(f"2. PATH: {os.environ.get('PATH', 'N/A')[:50]}...")
+print(f"3. USER: {os.environ.get('USER', 'N/A')}")
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+os.environ['MY_VAR'] = 'test_value'
+print(f"4. MY_VAR: {os.environ.get('MY_VAR')}")
 
 print("\n✅ Solution completed!")

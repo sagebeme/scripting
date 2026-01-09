@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
 Solution: Exercise 4 - Prompts
-Complete solution for the exercise
 """
-
 print("=" * 60)
-print(f"Solution: Exercise 4 - Prompts")
+print("Solution: Exercise 4 - Prompts")
 print("=" * 60)
 
-# Solution implementation
-# This demonstrates one approach to solving the exercise
-# Refer to the exercise file for specific requirements
+# Example using prompt_toolkit (requires: pip install prompt-toolkit)
+# from prompt_toolkit import prompt
+# 
+# name = prompt("Enter your name: ")
+# print(f"Hello, {name}!")
 
-
-# Implement solution based on exercise requirements
-print("1. Solution implementation")
+# Basic input
+name = input("Enter your name: ")
+print(f"1. Hello, {name}!")
 
 print("\n✅ Solution completed!")
