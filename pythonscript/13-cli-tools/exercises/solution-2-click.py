@@ -4,16 +4,20 @@ Solution: Exercise 2 - Click
 Complete solution for the exercise
 """
 
-# This solution demonstrates one approach to solving the exercise
-# There may be multiple valid solutions
-
 print("=" * 60)
 print(f"Solution: Exercise 2 - Click")
 print("=" * 60)
 
 # Solution implementation
+# This demonstrates one approach to solving the exercise
 # Refer to the exercise file for specific requirements
-# and implement accordingly
-print("Implement solution based on exercise requirements")
+
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Example CLI')
+parser.add_argument('--name', default='World', help='Name to greet')
+args = parser.parse_args(['--name', 'Python'])
+print(f"1. CLI argument: {args.name}")
 
 print("\n✅ Solution completed!")

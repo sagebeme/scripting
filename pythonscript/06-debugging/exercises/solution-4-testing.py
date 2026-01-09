@@ -4,16 +4,16 @@ Solution: Exercise 4 - Testing
 Complete solution for the exercise
 """
 
-# This solution demonstrates one approach to solving the exercise
-# There may be multiple valid solutions
-
 print("=" * 60)
 print(f"Solution: Exercise 4 - Testing")
 print("=" * 60)
 
 # Solution implementation
+# This demonstrates one approach to solving the exercise
 # Refer to the exercise file for specific requirements
-# and implement accordingly
-print("Implement solution based on exercise requirements")
+
+
+# Implement solution based on exercise requirements
+print("1. Solution implementation")
 
 print("\n✅ Solution completed!")

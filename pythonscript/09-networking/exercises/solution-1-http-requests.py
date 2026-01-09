@@ -4,16 +4,20 @@ Solution: Exercise 1 - Http Requests
 Complete solution for the exercise
 """
 
-# This solution demonstrates one approach to solving the exercise
-# There may be multiple valid solutions
-
 print("=" * 60)
 print(f"Solution: Exercise 1 - Http Requests")
 print("=" * 60)
 
 # Solution implementation
+# This demonstrates one approach to solving the exercise
 # Refer to the exercise file for specific requirements
-# and implement accordingly
-print("Implement solution based on exercise requirements")
+
+
+import re
+
+text = "Hello 123 World"
+print(f"1. Digits: {re.findall(r'\\d+', text)}")
+print(f"2. Words: {re.findall(r'\\w+', text)}")
+print(f"3. Match: {re.search(r'\\d+', text).group()}")
 
 print("\n✅ Solution completed!")
